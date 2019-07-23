@@ -1,0 +1,12 @@
+#! /bin/bash
+#PBS -N runn
+#PBS -q StdQ
+#PBS -l select=1:ncpus=1:host=Landauer23
+
+cd $PBS_O_WORKDIR
+export PATH=$PATH:/apps2/matlab/r2018a/bin/
+export PATH=$PATH:/apps/matlab/r2018a/bin/
+
+run="matlab -nodisplay -r main"  # type waht you mainly want to run here
+
+eval $run 1> >(tee ${PBS_JOBID}.${PBS_JOBNAME}.out) 2> >(tee -a ${PBS_JOBID}.${PBS_JOBNAME}.out)
