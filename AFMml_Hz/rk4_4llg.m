@@ -70,8 +70,8 @@ while ct1<totstep
     [~,sttdlt,~,~,~]=field_eta(mmm,Hk,Demag_,Hext,jc_STT,...
         tFL,Ms,facFLT_SHE,K12Dipole,mmmPL,PolFL,LFL,WFL,facFLT_STT,...
         thetaSH,tHM,lambdaSF,jc_SOT,TT,alp,tstep,thermalnois);
-    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)])/2;
-    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)])/2;
+    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)]);
+    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)]);
     ws=sttdlt*PolSTT*gam;
     if ct1==1
         mmm_Fe=m_init1;
@@ -112,8 +112,8 @@ while ct1<totstep
     [~,sttdlt,~,~,~]=field_eta(mmm,Hk,Demag_,Hext,jc_STT,...
         tFL,Ms,facFLT_SHE,K12Dipole,mmmPL,PolFL,LFL,WFL,facFLT_STT,...
         thetaSH,tHM,lambdaSF,jc_SOT,TT,alp,tstep,thermalnois);
-    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)])/2;
-    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)])/2;
+    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)]);
+    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)]);
     ws=sttdlt*PolSTT*gam;
     dLdt_tmp=dLdt;
     dmdt_tmp=dmdt;
@@ -128,8 +128,8 @@ while ct1<totstep
     [~,sttdlt,~,~,~]=field_eta(mmm,Hk,Demag_,Hext,jc_STT,...
         tFL,Ms,facFLT_SHE,K12Dipole,mmmPL,PolFL,LFL,WFL,facFLT_STT,...
         thetaSH,tHM,lambdaSF,jc_SOT,TT,alp,tstep,thermalnois);
-    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)])/2;
-    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)])/2;
+    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)]);
+    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)]);
     ws=sttdlt*PolSTT*gam;
     dLdt_tmp=dLdt;
     dmdt_tmp=dmdt;
@@ -144,8 +144,8 @@ while ct1<totstep
     [~,sttdlt,~,~,~]=field_eta(mmm,Hk,Demag_,Hext,jc_STT,...
         tFL,Ms,facFLT_SHE,K12Dipole,mmmPL,PolFL,LFL,WFL,facFLT_STT,...
         thetaSH,tHM,lambdaSF,jc_SOT,TT,alp,tstep,thermalnois);
-    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)])/2;
-    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)])/2;
+    fL=(2*wE*L+[w_para*L(1),0,0]-[0,0,w_perp*L(3)]);
+    fm=([w_para*mmm(1),0,0]-[0,0,w_perp*mmm(3)]);
     ws=sttdlt*PolSTT*gam;
     dLdt_tmp=dLdt;
     dmdt_tmp=dmdt;
